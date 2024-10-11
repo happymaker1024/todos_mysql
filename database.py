@@ -16,9 +16,9 @@ from db_env import user, password, host, db_name
 # engine = create_engine(DB_URL, connect_args={'check_same_thread': False})
 
 # mysql 연결 시
-# "mysql+pymysql://user_ID:password@host_IP:3306/DB_name"
-# db_url = f"mysql+pymysql://{user}:{password}@{host}:3306/{db_name}"
-# engine = create_engine(db_url)
+"mysql+pymysql://user_ID:password@host_IP:3306/DB_name"
+db_url = f"mysql+pymysql://{user}:{password}@{host}:3306/{db_name}"
+engine = create_engine(db_url)
 
 
 
